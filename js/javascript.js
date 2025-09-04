@@ -18,3 +18,7 @@ if (false || null || undefined || 0 || NaN ||"") {
 else {
     console.log("All false values are false");  
 }
+
+if (true && "hello" && 1 && -1 && "false") {
+    console.log("All true values are true");
+}
