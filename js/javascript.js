@@ -62,3 +62,13 @@ function multiply(x, y) {
 console.log(multiply)  // defaults to toString function
 multiply.version = "v.1.0.0";  // functions are objects can add properties to them
 console.log(multiply.version);
+
+function makeMultiplier(multiplier) {  // creates function that takes multiplier as parameter
+    var myFunc = function(x) {  // creates function that takes x as parameter
+        return multiplier * x;  // multiplies the first parameter with the second
+    }
+    return myFunc;  // returns the function
+};
+
+var multiplyby4 = makeMultiplier(4);
+console.log(multiplyby4(5));
