@@ -28,9 +28,20 @@ for (var i=0; i<5; i++){  // for loops in javascript same as java
 }
 
 function chickemWith(something) {
-    something = something || "anything";  // parameter defaults to anything
+    something = something || "anything";  // parameter defaults to anything  returns first true value
     console.log("chickem with " + something);
 }
 
 chickemWith("ketchup");
 chickemWith();
+
+var library = new Object();  // objects are somewhat like dictionaries in python
+library.name = "cool library";
+library.librarian = new Object();
+library.librarian.name = "john";
+library.librarian.favcolor = "blue";
+library["total construction costs"] = 1000000;  // can use strings with spaces if square brackets are used
+
+console.log(library);
+console.log(library.librarian.name);
+console.log(library["librarian"]["favcolor"]);  // alternate way to access object properties
