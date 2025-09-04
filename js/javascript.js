@@ -11,3 +11,10 @@ if (x == undefined) {  // == checks for value, === means strict equals checks fo
 else {
     console.log(`x is defined ${x}`);
 }
+
+if (false || null || undefined || 0 || NaN ||"") {
+    console.log("This won't be printed");
+}
+else {
+    console.log("All false values are false");  
+}
