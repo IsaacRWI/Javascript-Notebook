@@ -26,3 +26,11 @@ if (true && "hello" && 1 && -1 && "false") {  // && means and
 for (var i=0; i<5; i++){  // for loops in javascript same as java
     console.log(i);
 }
+
+function chickemWith(something) {
+    something = something || "anything";  // parameter defaults to anything
+    console.log("chickem with " + something);
+}
+
+chickemWith("ketchup");
+chickemWith();
