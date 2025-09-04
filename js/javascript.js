@@ -88,5 +88,5 @@ console.log(a, b);  // a is still 7 whilst b changed
 
 var aa  = {x: 7};
 var bb = aa;  // bb is a reference to aa
-bb.x += 5;
-console.log(aa, bb);  // both aa and bb changed
+bb.x = 10;
+console.log(aa, bb); // both aa and bb are {x:10}
