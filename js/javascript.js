@@ -45,3 +45,13 @@ library["total construction costs"] = 1000000;  // can use strings with spaces i
 console.log(library);
 console.log(library.librarian.name);
 console.log(library["librarian"]["favcolor"]);  // alternate way to access object properties
+
+var facebook = {  // defining objects with object literal  python dictionary
+    name: "facebook",
+    ceo: {
+        firstName: "Mark",
+        favColor: "blue"
+    },
+    "stock of company": 110
+};
+console.log(facebook);
