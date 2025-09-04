@@ -79,3 +79,14 @@ function doOperationOn(x, operation){
 
 var result = doOperationOn(6, multiplyby4);
 console.log(result);
+
+// pass var by value vs by reference 
+var a = 7;
+var b = a;  // b is a copy of a
+b += 5;
+console.log(a, b);  // a is still 7 whilst b changed
+
+var aa  = {x: 7};
+var bb = aa;  // bb is a reference to aa
+bb.x += 5;
+console.log(aa, bb);  // both aa and bb changed
