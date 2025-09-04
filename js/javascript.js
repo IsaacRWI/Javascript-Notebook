@@ -22,3 +22,7 @@ else {
 if (true && "hello" && 1 && -1 && "false") {  // && means and 
     console.log("All true values are true");
 }
+
+for (var i=0; i<5; i++){  // for loops in javascript same as java
+    console.log(i);
+}
