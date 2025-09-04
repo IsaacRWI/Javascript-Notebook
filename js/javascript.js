@@ -12,13 +12,13 @@ else {
     console.log(`x is defined ${x}`);
 }
 
-if (false || null || undefined || 0 || NaN ||"") {
+if (false || null || undefined || 0 || NaN ||"") {  // || means or
     console.log("This won't be printed");
 }
 else {
     console.log("All false values are false");  
 }
 
-if (true && "hello" && 1 && -1 && "false") {
+if (true && "hello" && 1 && -1 && "false") {  // && means and 
     console.log("All true values are true");
 }
