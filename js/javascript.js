@@ -5,7 +5,7 @@ function compare (x, y) {
 
 var x;
 x = 5;
-if (x == undefined) {
+if (x == undefined) {  // == checks for value, === means strict equals checks for value and type
     console.log("x is undefined");
 }
 else {
