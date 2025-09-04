@@ -90,3 +90,16 @@ var aa  = {x: 7};
 var bb = aa;  // bb is a reference to aa
 bb.x = 10;
 console.log(aa, bb); // both aa and bb are {x:10}
+
+// Function constructor
+function Circle (radius) {
+    this.radius = radius;  // similar to python self
+    };
+
+Circle.prototype.getArea =  // adding method to Circle class  all circle objects will share this method
+    function() {
+        return Math.PI * Math.pow(this.radius, 2);
+};
+
+myCircle = new Circle(10);
+console.log(myCircle.getArea());
