@@ -55,3 +55,10 @@ var facebook = {  // defining objects with object literal  python dictionary
     "stock of company": 110
 };
 console.log(facebook);
+
+function multiply(x, y) {
+    return x * y;
+}
+console.log(multiply)  // defaults to toString function
+multiply.version = "v.1.0.0";  // functions are objects can add properties to them
+console.log(multiply.version);
