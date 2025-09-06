@@ -94,12 +94,12 @@ console.log(aa, bb); // both aa and bb are {x:10}
 // Function constructor
 function Circle (radius) {
     this.radius = radius;  // similar to python self
-    };
+    };  // gets executed everytime a new Circle object is created
 
 Circle.prototype.getArea =  // adding method to Circle class  all circle objects will share this method
     function() {
         return Math.PI * Math.pow(this.radius, 2);
 };
 
-myCircle = new Circle(10);
+myCircle = new Circle(10);  // new keyword creates new object instead of calling function
 console.log(myCircle.getArea());
