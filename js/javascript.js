@@ -103,3 +103,12 @@ Circle.prototype.getArea =  // adding method to Circle class  all circle objects
 
 myCircle = new Circle(10);  // new keyword creates new object instead of calling function
 console.log(myCircle.getArea());
+
+// object literals 
+var literalCircle = {  // basically new object
+    radius : 10,
+    getArea : function () {
+        console.log(this);  // this now refers to the object literal instead of the global object 
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+};
