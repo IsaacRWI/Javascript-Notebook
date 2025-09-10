@@ -10,3 +10,6 @@ greeter.name = "name";  // variables unique to the object
 greeter.hello = function () {  // functions unique to the object
     console.log("hello", greeter.name);
 };
+
+// when calling on the object function use
+// object.function()
