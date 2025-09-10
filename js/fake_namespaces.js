@@ -13,3 +13,13 @@ greeter.hello = function () {  // functions unique to the object
 
 // when calling on the object function use
 // object.function()
+
+// iife can be used with these objects
+(function (window) {  // function declaring windows as its parameter
+    var greeter = {};
+    greeter.name = "name";
+    greeter.hello = function () {
+        console.log("hello", greeter.name);
+    };
+    window.greeter = greeter  // exposes the object to global scope
+})(window); // the function being executed with the window inputted as the window
