@@ -18,6 +18,7 @@ greeter.hello = function () {  // functions unique to the object
 (function (window) {  // function declaring windows as its parameter
     var greeter = {};
     greeter.name = "name";
+    var local = "local var"  // local variables will not be exposed with the window objcet
     greeter.hello = function () {
         console.log("hello", greeter.name);
     };
